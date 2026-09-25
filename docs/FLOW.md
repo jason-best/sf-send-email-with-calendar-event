@@ -1,6 +1,6 @@
 # Flow configuration
 
-Add Apex action **Send Email with Calendar Event**. Inputs are grouped into Recipients, Sender, Message, Attachments and Logging, Event, Update or Cancel, and Meeting Request.
+Add Apex action **Send Email with Calendar Event**. Each run sends one event. Inputs are grouped into Recipients, Sender, Message, Attachments and Logging, Event, Update or Cancel, and Meeting Request.
 
 ## Action name
 

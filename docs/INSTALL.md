@@ -2,18 +2,18 @@
 
 ## Option A — Install unlocked package (recommended)
 
-**Version:** `0.1.0-4` (released)  
-**Subscriber package version Id:** `04tgL000000VyxZQAS`
+**Version:** `0.1.1-1` (released)  
+**Subscriber package version Id:** `04tgL000000W4WjQAK`
 
 | Org type | Install URL |
 |----------|-------------|
-| Production | https://login.salesforce.com/packaging/installPackage.apexp?p0=04tgL000000VyxZQAS |
-| Sandbox | https://test.salesforce.com/packaging/installPackage.apexp?p0=04tgL000000VyxZQAS |
+| Production | https://login.salesforce.com/packaging/installPackage.apexp?p0=04tgL000000W4WjQAK |
+| Sandbox | https://test.salesforce.com/packaging/installPackage.apexp?p0=04tgL000000W4WjQAK |
 
 CLI:
 
 ```bash
-sf package install --package 04tgL000000VyxZQAS --target-org <alias>
+sf package install --package 04tgL000000W4WjQAK --target-org <alias>
 ```
 
 No installation key. After install, add Flow action **Send Email with Calendar Event** (`three_levers.SimpleEmailWithEvent`).

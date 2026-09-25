@@ -10,7 +10,7 @@ Flow invocable that sends an email and attaches a calendar file so clients can a
 ## Features
 
 - Flow action with the same recipient, sender, template, and attachment style as Send Email
-- Attaches a calendar file clients can add
+- Attaches one calendar event clients can add. There is no Event Collection input
 - **Publish** (default) sends an event with no participants
 - **Request** sends a meeting invite
 - **Cancel** reuses the stored Event UID with a higher Event Sequence
@@ -32,15 +32,15 @@ See [Flow configuration](docs/FLOW.md).
 
 ## Install package
 
-**Version `0.1.0-4` (released)** · Subscriber version Id `04tgL000000VyxZQAS`
+**Version `0.1.1-1` (released)** · Subscriber version Id `04tgL000000W4WjQAK`
 
 | Org | URL |
 |-----|-----|
-| Production | https://login.salesforce.com/packaging/installPackage.apexp?p0=04tgL000000VyxZQAS |
-| Sandbox | https://test.salesforce.com/packaging/installPackage.apexp?p0=04tgL000000VyxZQAS |
+| Production | https://login.salesforce.com/packaging/installPackage.apexp?p0=04tgL000000W4WjQAK |
+| Sandbox | https://test.salesforce.com/packaging/installPackage.apexp?p0=04tgL000000W4WjQAK |
 
 ```bash
-sf package install --package 04tgL000000VyxZQAS --target-org <alias>
+sf package install --package 04tgL000000W4WjQAK --target-org <alias>
 ```
 
 After install, the Flow action is **Send Email with Calendar Event** (`three_levers.SimpleEmailWithEvent`).
