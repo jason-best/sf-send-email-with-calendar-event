@@ -1,6 +1,6 @@
 # Send Email with Calendar Event
 
-Salesforce Flow action that sends an email and attaches an ICS calendar file (`.ics`) so clients can add the event. A later send can cancel that same event.
+Add to Calendar by email for Salesforce. This Flow action sends a message and attaches an ICS calendar file (`.ics`) so clients can add the event. A later send can cancel that same event.
 
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
 [![Salesforce API](https://img.shields.io/badge/Salesforce_API-65.0-00A1E0)](https://developer.salesforce.com)
