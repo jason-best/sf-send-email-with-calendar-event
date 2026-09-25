@@ -1,6 +1,6 @@
 # Send Email with Calendar Event
 
-Flow invocable that sends an email and attaches a calendar file so clients can add the event. A later send can cancel that same event.
+Salesforce Flow action that sends an email and attaches an ICS calendar file (`.ics`) so clients can add the event. A later send can cancel that same event.
 
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
 [![Salesforce API](https://img.shields.io/badge/Salesforce_API-65.0-00A1E0)](https://developer.salesforce.com)
@@ -27,6 +27,22 @@ Flow invocable that sends an email and attaches a calendar file so clients can a
 4. Store the **Event UID** output. To cancel later, send again with Event Method `Cancel`, that same UID, and a higher Event Sequence.
 
 See [Flow configuration](docs/FLOW.md).
+
+---
+
+## ICS calendar attachment
+
+Each email attaches one iCalendar file. The attachment is `text/calendar`, with one `VEVENT`. The mail client offers to add the event. This action does not show an Add to Calendar button. For a Flow screen or Lightning page button that downloads `event.ics`, use [Add to Calendar](https://github.com/jason-best/sf-add-to-calendar).
+
+| Event Method | File | ICS method |
+| --- | --- | --- |
+| Publish (default) | `event.ics` | `METHOD:PUBLISH` |
+| Request | `invite.ics` | `METHOD:REQUEST` |
+| Cancel | `cancel.ics` | `METHOD:CANCEL` |
+
+Publish sends an event with no participants. Request sends a meeting invite. Cancel reuses the stored Event UID with a higher Event Sequence so the same ICS event is removed.
+
+Timed events are UTC instants. All-day events are calendar dates in the named time zone.
 
 ---
 
