@@ -72,17 +72,6 @@ After install, the Flow action is **Send Email with Calendar Event** (`three_lev
 
 ---
 
-## Development
-
-```bash
-sf org create scratch --definition-file config/project-scratch-def.json --alias send-email-calendar-scratch --set-default
-sf project deploy start --manifest manifest/package.xml --target-org send-email-calendar-scratch --test-level RunLocalTests
-```
-
-Packaging and 2GP releases are maintained in the private [ThreeLeversDevOrg](https://github.com/jason-best/ThreeLeversDevOrg) monorepo. Source and docs: [jason-best/sf-send-email-with-calendar-event](https://github.com/jason-best/sf-send-email-with-calendar-event). See [docs/PACKAGING.md](docs/PACKAGING.md).
-
----
-
 ## License
 
 [BSD 3-Clause](LICENSE) · Copyright Three Levers
